@@ -1,0 +1,68 @@
+<head>
+    <title>YAVT</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <link rel="icon" type="x-icon" href="icon.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="css/quiz.css" rel="stylesheet">
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-light bg-light">
+        <a class="navbar-brand" href="/index.html">Yet Another Values Test <small>v0.2.2b</small></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://github.com/yetanothervaluestest/YetAnotherValuesTest.github.io">Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-12 question-container">
+                <div class="question-inner">
+                    <p class="lead" id="question-text"></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 selection-container">
+                <div class="card">
+                    <div class="card-title">
+                        <h2 style="text-align:center;" id="question-number">载入中……</h2>
+                    </div>
+                    <div class="card-body text-center">
+                        <button type="button" id="btn-strongly-positive" class="btn btn-success btn-lg btn-block"
+                            style="background-color: #1b5e20;">强烈同意</button>
+                        <button type="button" id="btn-positive"
+                            class="btn btn-success btn-lg btn-block mt-2">同意</button>
+                        <button type="button" id="btn-uncertain"
+                            class="btn btn-light btn-lg btn-block mt-2">中立/不确定</button>
+                        <button type="button" id="btn-negative" class="btn btn-danger btn-lg btn-block mt-2">反对</button>
+                        <button type="button" id="btn-strongly-negative" class="btn btn-danger btn-lg btn-block mt-2"
+                            style="background-color: #b71c1c;">强烈反对</button>
+                        <button type="button" id="btn-prev" class="btn btn-primary btn-lg mt-4">返回</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript for the test itself -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="questions.js"></script>
+    <script src="quiz.js"></script>
+</body>

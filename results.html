@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>YAVT结果</title>
+    <script type="application/javascript" src="ideologies.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="#">版本号：0.2.2 b</a>
+        <a href="index.html">再来一遍</a>
+        <a href="https://github.com/YetAnotherValuesTest/YetAnotherValuesTest.github.io">Github</a>
+        <a href="https://github.com/YetAnotherValuesTest/YetAnotherValuesTest.github.io/issues">反馈</a>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="card mt-3">
+            <div class="card-title">
+                <h2 class="text-center">
+                    YAVT结果
+                </h2>
+
+            </div>
+            <hr />
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li class="ax">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="wrapper">
+                                    <a href="#">
+                                        <span class="picture p2"><img src="value_images/balance.svg"
+                                                height="50pt"></span>
+                                        <span class="wenzi">平等 </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h2>经济: <span class="weight-300" id="economic-label"></span></h2>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="text-wrapper" id="equality"></div>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <div class="text-wrapper" id="wealth"></div>
+                                    </div>
+                                </div>
+                                <div class="progress" style="height: 25px" ;>
+
+                                    <div class="progress-bar bg-danger progress-bar-animated" role="progressbar"
+                                        style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+                                        id="bar-equality">
+                                    </div>
+
+                                    <div class="progress-bar" role="progressbar" id="bar-wealth" style="width: 50%"
+                                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="wrapper">
+                                    <a href="#">
+                                        <span class="picture p2"><img src="value_images/money.png" height="50pt"></span>
+                                        <span class="wenzi">市场</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    </li>
+                    <li class="ax">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="wrapper text-center">
+                                    <a href="#">
+                                        <span class="picture p2"><img src="value_images/globe.png" height="50pt"></span>
+                                        <span class="wenzi">世界</span>
+
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h2>外事: <span class="weight-300" id="diplomatic-label"></span></h2>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="text-wrapper" id="peace"></div>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <div class="text-wrapper" id="might"></div>
+                                    </div>
+                                </div>
+                                <div class="progress" style="height: 25px" ;>
+
+                                    <div class="progress-bar bg-danger progress-bar-animated" role="progressbar"
+                                        style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+                                        id="bar-peace">
+                                    </div>
+
+                                    <div class="progress-bar" role="progressbar" id="bar-might" style="width: 50%"
+                                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <div class="wrapper">
+                                    <a href="#">
+                                        <span class="picture p2"><img src="value_images/china.png" height="50pt"></span>
+                                        <span class="wenzi">国家</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    </li>
+                    <li class="ax">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="wrapper">
+                                    <a href="#">
+                                        <span class="picture p2"><img src="value_images/paper-plane (1).png"
+                                                height="50pt"></span>
+                                        <span class="wenzi">自由</span>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h2>政治: <span class="weight-300" id="state-label"></span></h2>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="text-wrapper" id="liberty"></div>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <div class="text-wrapper" id="authority"></div>
+                                    </div>
+                                </div>
+                                <div class="progress" style="height: 25px" ;>
+
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%"
+                                        id="bar-liberty" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+
+                                    </div>
+
+                                    <div class="progress-bar bg-info" role="progressbar" id="bar-authority"
+                                        style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="wrapper">
+                                    <a href="#">
+                                        <span class="picture p2"><img src="value_images/emperor.png"
+                                                height="50pt"></span>
+                                        <span class="wenzi">权威</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    </li>
+                    <li class="ax">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="wrapper">
+                                    <a href="#">
+                                        <span class="picture p2"><img src="value_images/atom.png" height="50pt"></span>
+                                        <span class="wenzi">进步</span>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h2>社会: <span class="weight-300" id="society-label"></span></h2>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="text-wrapper" id="progress"></div>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <div class="text-wrapper" id="tradition"></div>
+                                    </div>
+                                </div>
+                                <div class="progress" style="height: 25px" ;>
+                                    <div class="progress-bar bg-success" role="progressbar" id="bar-progress"
+                                        style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+
+                                    </div>
+
+                                    <div class="progress-bar bg-info" role="progressbar" id="bar-tradition"
+                                        style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="wrapper">
+                                    <a href="#">
+                                        <span class="picture p2"><img src="value_images/fengshui.png"
+                                                height="50pt"></span>
+                                        <span class="wenzi">传统</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    </li>
+                    <li class="ax">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="wrapper">
+                                    <a href="#">
+                                        <span class="picture p2"><img src="value_images/garden.png"
+                                                height="50pt"></span>
+                                        <span class="wenzi">生态</span>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h2>环境: <span class="weight-300" id="environment-label"></span></h2>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="text-wrapper" id="ecology"></div>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <div class="text-wrapper" id="production"></div>
+                                    </div>
+                                </div>
+                                <div class="progress" style="height: 25px" ;>
+
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%"
+                                        id="bar-ecology" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+
+                                    </div>
+
+                                    <div class="progress-bar bg-info" role="progressbar" id="bar-production"
+                                        style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="wrapper">
+                                    <a href="#">
+                                        <span class="picture p2"><img src="value_images/factory.png"
+                                                height="50pt"></span>
+                                        <span class="wenzi">生产</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    </li>
+                    <!-- 更多轴
+<li class="ax">
+						<div class="row">
+							<div class="col-2">
+								<div class="wrapper">
+									<a href="#">
+										<span class="picture p2"><img src="图标绝对路径"
+												height="50pt"></span>
+										<span class="wenzi"> 文字 </span>
+									</a>
+
+								</div>
+							</div>
+							<div class="col-8">
+								<h2>描述: <span class="weight-300" id="economic-label"></span></h2>
+								<div class="row">
+									<div class="col-6">
+										<div class="text-wrapper" id="左百分比jsid"></div>
+									</div>
+									<div class="col-6 text-right">
+										<div class="text-wrapper" id="右百分比jsid"></div>
+									</div>
+								</div>
+								<div class="progress" style="height: 25px" ;>
+
+									<div class="progress-bar bg-danger progress-bar-animated" role="progressbar" style="width: 50%"
+										aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" id="bar-jsid左">
+									</div>
+
+									<div class="progress-bar" role="progressbar" id="bar-jsid右"
+										style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+									</div>
+								</div>
+							</div>
+							<div class="col-2">
+								<div class="wrapper">
+									<a href="#">
+										<span class="picture p2"><img src="图标绝对路径" height="50pt"></span>
+										<span class="wenzi">文字</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<hr />
+					</li>
+-->
+                </ul>
+                <div class="row">
+                    <div class="col-6">
+                        <h2>最接近的意识形态：<h4 id="ideology-label">
+                            </h4>
+                        </h2>
+                    </div>
+                    <div class="col-6">
+                        <div class="wrapper text-center">
+                            <button type="button" data-toggle="modal" data-target="#share"
+                                style=" width:60px;height:60px;border-radius: 50%" class="btn btn-primary ml-1"><span
+                                    style="text-align: center;" class="material-icons">
+                                    share
+                                </span></button>
+                            <h5 style="color: slategray;margin-top: 8px; font-size: small;">分享结果</h5>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="share" tabindex="-1" role="dialog" aria-labelledby="share"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <!-- TODO -->
+                                        <div class="t">分享</div>
+                                        <div class="dw" id="dw"></div>
+                                        <a class="down" href="" download="downImg">>save picture</a>
+                                        <a href="url" id="url">
+                                            <!-- TODO -->
+                                        </a>
+                                        <img id="mytest">
+                                        <button onclick="getimg()"></button>
+                                        <canvas></canvas>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!--javascript function-->
+    <script type="application/javascript" src="results.js">
+
+    </script>
+
+
+    <script type="text/javascript" src="html2canvas.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="application/javascript" src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+
+    <script>
+        html2canvas(document.body, {
+            onrendered: function (canvas) {
+                var url = canvas.toDataURL();//图片地址
+                document.body.appendChild(canvas);
+            },
+            width: 300,
+            height: 300
+        });
+    </script>
+</body>
+
+</html>

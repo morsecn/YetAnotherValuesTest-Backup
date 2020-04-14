@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YAVT</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <!-- Open Iconic -->
+    <link href="open-iconic/font/css/open-iconic-foundation.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="#">版本号：0.2.2 b</a>
+        <a href="#">YAVT</a>
+        <a href="#">Github</a>
+        <a href="#">About us</a>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid text-center">
+        <p>Yet Another Values Test是一个基于8Values瞎鸡儿做的在中国语境下的站队娱乐测试。</p>
+        <!-- QR Code -->
+        <div id="qrcode-container">
+            <img src="SVGS/qrcode.svg" height="300" width="300" />
+            <p>
+                <a class="btn btn-info shadow text-white" href="shareYAVT.png" download>
+                    <span class="fi-cloud-download" title="save" aria-hidden="true"></span>
+                    保存图片
+                </a>
+                <a class="btn btn-light shadow" href="http://www.twitter.com/share?url=yetanothervaluestest.github.io">
+                    <span class="icon-twitter" title="share" aria-hidden="true"></span>
+                    Tweet
+                </a>
+            </p>
+        </div>
+        <div>
+            <button class="btn btn-primary btn-lg shadow" data-toggle="modal" data-target="#startmodal">点击开始</button>
+        </div>
+    </div>
+
+    <!-- 模态框 -->
+    <div class="modal fade" id="startmodal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">YAVT测试说明</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    <p class="card-text">你将会看到一系列观点，请点击对应按钮选择你对于每个观点的看法。</p>
+                    <p class="card-text">本测试主要考量中国大陆社会环境，在此基础上尽可能考量港台及海外华人情况。</p>
+                    <p class="card-text">
+                        <strong>注意：</strong>为了保证本测试的区分度，可能会出现高度偏激或有冒犯性的内容；凡题目中涉及国家民族的部分，请按您个人所认同的国家或民族代入。</p>
+                    <p class="card-text"><strong>隐私声明：</strong>我们不会收集您的个人信息。</p>
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="location.href='quiz.html'">知道了！</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">等等，还是算了！</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-6 offset-lg-3">受<strong><a
+                        href="https://8values.github.io/">8Values</a></strong>、<strong><a
+                        href="https://www.politiscales.net/">PolitiScales</a></strong>和<strong><a
+                        href="http://zuobiao.me/">北大未名版中国政治坐标系测试</a></strong>启发<br>使用bootstrapv4作为前端框架<br>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+
+</html>
