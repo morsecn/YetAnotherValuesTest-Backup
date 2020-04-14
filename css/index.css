@@ -1,0 +1,32 @@
+nav {
+    -webkit-filter: none;
+            filter: none;
+    text-align: right;
+    background-color: cornflowerblue;
+}
+nav a {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color:#fff;
+    font-size: 1.2rem;
+}
+
+#qrcode-container {
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem auto 1rem auto;
+    border-color: #AAA;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 24px;
+    background-color: #FFF;
+}
+
+.icon-twitter {
+    background-image: url("../SVGS/Twitter_Logo_WhiteOnImage.svg");
+    width:1rem;
+    height:1rem;
+    display: inline-block;
+    background-size: cover;
+}
